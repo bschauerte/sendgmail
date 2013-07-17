@@ -16,19 +16,27 @@ You have to set the variables/constants in the *CONFIGURATION* section of the sc
 
 Set *sendgmail_skript_path* to the correct path of *sendgmail.sh*.
 
+### Prerequisites
+
+You might need to install [Heirloom Mailx aka nail](http://heirloom.sourceforge.net/mailx.html) and the correct certificates, which however are often part of other programs such as Firefox.
+
 ## Usage
 
 ### sendgmail.sh
 
-... will update this part sometime soon ... but it's simple, just look in the code
+... will update this part of the README sometime soon ... but it's simple, just look in the code
 
 ### sendgmail.m
 
 The interface should imitate Matlab's sendmail script (which I never got to work properly with my GMail account, despite the example).
 
-## Prerequisites
+## Why?
 
-You might need to install [Heirloom Mailx aka nail](http://heirloom.sourceforge.net/mailx.html) and the correct certificates, which however are often part of other programs such as Firefox.
+Because sometimes you have to work on a badly configured server or behind nasty firewall, but you still want to receive notification/status/crash-report e-mails when your program (e.g., week-long machine learning and evaluation tasks) finishes or crashes.
+
+## Contribute
+
+You are welcome to send patches or pull requests.
 
 ## Contact
 
