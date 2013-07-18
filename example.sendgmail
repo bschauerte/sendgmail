@@ -1,0 +1,8 @@
+# YOUR GMail address
+FROM_EMAIL_ADDRESS="MY_LOGIN@gmail.com"
+# YOUR GMail password
+EMAIL_ACCOUNT_PASSWORD="MY_PASSWORD"
+# YOUR NSS config dir, use Firefor for your convenience
+NSS_CONFIG_DIR="/home/bschauer/.mozilla/firefox/rnkg2jlf.default/"
+# Ubuntu's default mailx is a stripped down version without the necessary features, use heirloom instead
+MAILX_BIN="heirloom-mailx"

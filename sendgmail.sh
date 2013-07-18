@@ -17,22 +17,31 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #
-# CONFIGURATION
+# DEFAULT CONFIGURATION
 #
 
 FROM_EMAIL_ADDRESS="MY_LOGIN@gmail.com"          # YOUR GMail address
 EMAIL_ACCOUNT_PASSWORD="MY_PASSWORD"             # YOUR GMail password
 NSS_CONFIG_DIR="/home/bschauer/.mozilla/firefox/rnkg2jlf.default/" # YOUR NSS config dir, use Firefor for your convenience
-
 MAILX_BIN="heirloom-mailx"                       # Ubuntu's default mailx is a stripped down version without the necessary features
 
+# Source the config, if it exists
+if [ -f ~/.sendgmail ];
+then
+   . ~/.sendgmail
+fi
+
 #
-# MAIN CODE
+# Default mail values
 #
 
 EMAIL_SUBJECT="test"                             # Mail subject
 FRIENDLY_NAME="Command Line GMail"               # Friendly name will be shown as the sender's name
 TO_EMAIL_ADDRESS="test@account.de"               # To-Address
+
+#
+# MAIN CODE
+#
 
 if [ ! -f $NSS_CONFIG_DIR ]; then
     echo "Error: NSS configuration directory not found"
