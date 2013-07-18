@@ -10,7 +10,7 @@ Copy the files somewhere and then do the following ...
 
 You have to create a ~/.sendgmail file containing the configuration in your home folder. See *example.sendgmail* for a configuration example.
 
-*NOTE* Currently, the configuration file is sourced. This allows for a lot of flexibility, but it also poses a potential security risk. Take care!
+**NOTE** The configuration file is sourced. This allows for a lot of flexibility, but it also poses a potential security risk. Take care!
 
 Variables:
 
@@ -21,9 +21,9 @@ Variables:
 
 Questions?
 
-* [Where is the Firefox profile folder](http://kb.mozillazine.org/Profile_folder_-_Firefox#Navigating_to_the_profile_folder)
-* [What is mailx](http://en.wikipedia.org/wiki/Mailx)
-* ... and [Heirloom mailx](http://heirloom.sourceforge.net/mailx.html)
+* [Where is the Firefox profile folder](http://kb.mozillazine.org/Profile_folder_-_Firefox#Navigating_to_the_profile_folder)?
+* [What is mailx](http://en.wikipedia.org/wiki/Mailx) ...?
+* ... and [Heirloom mailx](http://heirloom.sourceforge.net/mailx.html)?
 
 ### sendgmail.m
 
@@ -37,7 +37,7 @@ You might need to install [Heirloom Mailx aka nail](http://heirloom.sourceforge.
 
 ### sendgmail.sh
 
-*sendgmail.sh* basically allows to use a subset of arguments that mail and mailx provide. Currently, supported are "Ftsa":
+*sendgmail.sh* basically allows to use a subset of the arguments that mail and mailx provide. Currently, supported are "Ftsa":
 
 * *F*: set sender's friendly name (what is shown as name of the sender)
 * *t*: set To-Address
