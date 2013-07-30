@@ -43,7 +43,7 @@ TO_EMAIL_ADDRESS="test@account.de"               # To-Address
 # MAIN CODE
 #
 
-if [ ! -f $NSS_CONFIG_DIR ]; then
+if [ ! -d $NSS_CONFIG_DIR ]; then
     echo "Error: NSS configuration directory not found"
 fi
 
