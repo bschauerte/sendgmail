@@ -8,6 +8,8 @@ Copy the files somewhere and then do the following ...
 
 ### sendgmail.sh
 
+You can use *sendgmail_configure.sh* for configuration. However, it currently only supports Linux and not Mac OS X (let's not talk about Windows).
+
 You have to create a ~/.sendgmail file containing the configuration in your home folder. See *example.sendgmail* for a configuration example.
 
 **NOTE** The configuration file is sourced. This allows for a lot of flexibility, but it also poses a potential security risk. Take care!
