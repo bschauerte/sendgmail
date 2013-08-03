@@ -43,7 +43,7 @@ TO_EMAIL_ADDRESS="test@account.de"               # To-Address
 # MAIN CODE
 #
 
-if [ ! -f $NSS_CONFIG_DIR ]; then
+if [ ! -d $NSS_CONFIG_DIR ]; then
     echo "Error: NSS configuration directory not found"
 fi
 
@@ -61,4 +61,4 @@ do
 done
 
 
-mailx -v -s "$EMAIL_SUBJECT" -S smtp-use-starttls -S ssl-verify=ignore -S smtp-auth=login -S smtp=smtp://smtp.gmail.com:587 -S from="$FROM_EMAIL_ADDRESS($FRIENDLY_NAME)" -S smtp-auth-user=$FROM_EMAIL_ADDRESS -S smtp-auth-password=$EMAIL_ACCOUNT_PASSWORD  -S ssl-verify=ignore -S nss-config-dir=NSS_CONFIG_DIR $TO_EMAIL_ADDRESS
+$MAILX_BIN -v -s "$EMAIL_SUBJECT" -S smtp-use-starttls -S ssl-verify=ignore -S smtp-auth=login -S smtp=smtp://smtp.gmail.com:587 -S from="$FROM_EMAIL_ADDRESS($FRIENDLY_NAME)" -S smtp-auth-user=$FROM_EMAIL_ADDRESS -S smtp-auth-password=$EMAIL_ACCOUNT_PASSWORD  -S ssl-verify=ignore -S nss-config-dir=NSS_CONFIG_DIR $TO_EMAIL_ADDRESS
