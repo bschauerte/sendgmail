@@ -62,5 +62,5 @@ You are welcome to send patches or pull requests.
 
 ## Contact
 
-[Boris Schauerte](http://cvhci.anthropomatik.kit.edu/~bschauer/ "Boris Schauerte, Homepage") &lt;schauerte aht acm doht org&gt;  
-Karlsruhe Institute of Technology  
+Boris Schauerte
+http://schauerte.me/
