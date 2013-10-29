@@ -62,5 +62,5 @@ You are welcome to send patches or pull requests.
 
 ## Contact
 
-Boris Schauerte
+Boris Schauerte  
 http://schauerte.me/
